@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int palling(int);
+int palling(int pl)
+{
+    int rem, pl1 = 0;
+while(pl!=0){
+    rem = pl % 10;
+    pl=pl/10;
+    pl1 = pl1 * 10 + rem;
+}
+    
+    return pl1;
+}
+int main()
+{
+    int pl;
+    cout<<"Enter a number";
+    cin >> pl;
+  
+    int pll = palling(pl);
+    if ( pl==pll  &&pl>=01 )
+    {
+        cout << "This a pallingdrom number";
+    }
+    else
+        cout << "this is not an pallingdrom number";
+
+    return 0;
+}
